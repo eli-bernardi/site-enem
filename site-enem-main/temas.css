@@ -1,0 +1,209 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', 'Segoe UI', Roboto, sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #f5f7fa 0%, #e4e8f0 100%);
+  min-height: 100vh;
+  color: black;
+  line-height: 1.6;
+}
+
+header {
+  background: linear-gradient(135deg, #3a0ca3, #4361ee);
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow:0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  padding: 0 1rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 0.75rem 1.5rem;
+  font-weight: 500;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  font-size: 1.1rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+nav a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+main {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 2rem;
+}
+
+h1 {
+  text-align: center;
+  margin: 2rem 0;
+  color: #3a0ca3;
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+h2 {
+  color: #3a0ca3;
+  margin: 2rem 0 1.5rem;
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.theme-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  margin: 3rem 0;
+}
+
+.theme {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.theme:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.theme a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  font-size: 1.2rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(transparent, rgba(0,0,0,0.7));
+  padding: 1.5rem 1rem 1rem;
+  z-index: 2;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.theme:hover a {
+  background: linear-gradient(transparent, rgba(63, 55, 201, 0.9));
+  padding-bottom: 1.5rem;
+}
+
+.theme img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+  transition: all 0.3s ease;
+}
+
+.theme:hover img {
+  transform: scale(1.05);
+}
+
+.tips {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow:0 4px 12px rgba(0, 0, 0, 0.15);
+  margin: 3rem 0;
+  border-top: 4px solid #4361ee;
+}
+
+.tips h2 {
+  color: #4361ee;
+  margin-bottom: 1.5rem;
+}
+
+.tips ul {
+  list-style: none;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.tips li {
+  padding: 1rem;
+  margin-bottom: 0.5rem;
+  background: rgba(67, 97, 238, 0.1);
+  border-radius: 8px;
+  position: relative;
+  padding-left: 2.5rem;
+  transition: all 0.3s ease;
+}
+
+.tips li:hover {
+  background: rgba(67, 97, 238, 0.2);
+  transform: translateX(5px);
+}
+
+.tips li::before {
+  content: "→";
+  color: #4361ee;
+  font-weight: bold;
+  position: absolute;
+  left: 1rem;
+}
+
+footer {
+  background: linear-gradient(135deg, #3a0ca3, #4361ee);
+  color: white;
+  text-align: center;
+  padding: 2rem;
+  margin-top: 3rem;
+}
+
+footer p {
+  text-align: center;
+  color: white;
+  font-size: 1rem;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .theme-container {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  h1 {
+    font-size: 2rem;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+  }
+  
+  nav ul {
+    gap: 1rem;
+  }
+  
+  nav a {
+    padding: 0.6rem 1.2rem;
+    font-size: 1rem;
+  }
+}
