@@ -11,6 +11,7 @@
     --sombra: 0 4px 12px rgba(0, 0, 0, 0.1);
     --borda-redonda: 8px;
     --transicao: all 0.3s ease;
+    --teste: #f0f0f0;
 }
 
 * {
