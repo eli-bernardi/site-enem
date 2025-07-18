@@ -1,18 +1,3 @@
-:root {
-  --azul: #4361ee;
-  --azul-escuro: #3a0ca3;
-  --azul-claro: #4cc9f0;
-  --vermelho: #f72585;
-  --verde: #4ad66d;
-  --branco: #f8f9fa;
-  --preto: #212529;
-  --cinza-claro: #e9ecef;
-  --cinza-medio: #adb5bd;
-  --sombra: 0 4px 12px rgba(0, 0, 0, 0.15);
-  --borda-redonda: 12px;
-  --transicao: all 0.3s ease;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -23,17 +8,17 @@
 body {
   background: linear-gradient(135deg, #f5f7fa 0%, #e4e8f0 100%);
   min-height: 100vh;
-  color: var(--preto);
+  color: black;
   line-height: 1.6;
 }
 
 header {
-  background: linear-gradient(135deg, var(--azul-escuro), var(--azul));
+  background: linear-gradient(135deg, #3a0ca3, #4361ee);
   padding: 1rem 0;
   position: sticky;
   top: 0;
   z-index: 100;
-  box-shadow: var(--sombra);
+  box-shadow:0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 nav ul {
@@ -46,12 +31,12 @@ nav ul {
 }
 
 nav a {
-  color: var(--branco);
+  color: white;
   text-decoration: none;
   padding: 0.75rem 1.5rem;
   font-weight: 500;
   border-radius: 50px;
-  transition: var(--transicao);
+  transition: all 0.3s ease;
   font-size: 1.1rem;
   background-color: rgba(255, 255, 255, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.2);
@@ -72,14 +57,14 @@ main {
 h1 {
   text-align: center;
   margin: 2rem 0;
-  color: var(--azul-escuro);
+  color: #3a0ca3;
   font-size: 2.5rem;
   font-weight: 700;
   text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
 }
 
 h2 {
-  color: var(--azul-escuro);
+  color: #3a0ca3;
   margin: 2rem 0 1.5rem;
   text-align: center;
   font-size: 1.8rem;
@@ -94,11 +79,11 @@ h2 {
 }
 
 .theme {
-  background: var(--branco);
-  border-radius: var(--borda-redonda);
+  background: white;
+  border-radius: 12px;
   overflow: hidden;
-  box-shadow: var(--sombra);
-  transition: var(--transicao);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
   position: relative;
 }
 
@@ -110,7 +95,7 @@ h2 {
 .theme a {
   display: block;
   text-decoration: none;
-  color: var(--branco);
+  color: white;
   font-weight: 600;
   font-size: 1.2rem;
   position: absolute;
@@ -121,7 +106,7 @@ h2 {
   padding: 1.5rem 1rem 1rem;
   z-index: 2;
   text-align: center;
-  transition: var(--transicao);
+  transition: all 0.3s ease;
 }
 
 .theme:hover a {
@@ -134,7 +119,7 @@ h2 {
   height: 200px;
   object-fit: cover;
   display: block;
-  transition: var(--transicao);
+  transition: all 0.3s ease;
 }
 
 .theme:hover img {
@@ -142,16 +127,16 @@ h2 {
 }
 
 .tips {
-  background: var(--branco);
+  background: white;
   padding: 2rem;
-  border-radius: var(--borda-redonda);
-  box-shadow: var(--sombra);
+  border-radius: 12px;
+  box-shadow:0 4px 12px rgba(0, 0, 0, 0.15);
   margin: 3rem 0;
-  border-top: 4px solid var(--azul);
+  border-top: 4px solid #4361ee;
 }
 
 .tips h2 {
-  color: var(--azul);
+  color: #4361ee;
   margin-bottom: 1.5rem;
 }
 
@@ -168,7 +153,7 @@ h2 {
   border-radius: 8px;
   position: relative;
   padding-left: 2.5rem;
-  transition: var(--transicao);
+  transition: all 0.3s ease;
 }
 
 .tips li:hover {
@@ -178,15 +163,15 @@ h2 {
 
 .tips li::before {
   content: "→";
-  color: var(--azul);
+  color: #4361ee;
   font-weight: bold;
   position: absolute;
   left: 1rem;
 }
 
 footer {
-  background: linear-gradient(135deg, var(--azul-escuro), var(--azul));
-  color: var(--branco);
+  background: linear-gradient(135deg, #3a0ca3, #4361ee);
+  color: white;
   text-align: center;
   padding: 2rem;
   margin-top: 3rem;
@@ -194,7 +179,7 @@ footer {
 
 footer p {
   text-align: center;
-  color: var(--branco);
+  color: white;
   font-size: 1rem;
 }
 
